@@ -3,20 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Título da Página</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            color: #fff; /* Cor padrão para o título */
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #e74c3c; /* Vermelho para G e D */
+        }
+        .games-container {
+            display: flex;
+            justify-content: space-around; /* Espaça os jogos uniformemente */
+            flex-wrap: wrap; /* Permite que os jogos se ajustem em várias linhas, se necessário */
+        }
+        .game {
+            background-color: #333; /* Fundo para cada bloco de jogo */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 220px; /* Largura fixa para cada bloco */
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        }
+        img {
+            max-width: 100%; /* Imagem ocupa a largura máxima do bloco */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 8px;
+        }
+        .game-title {
+            margin: 10px 0 5px; /* Margens para o título do jogo */
+        }
+        .game-description {
+            font-size: 0.9em; /* Tamanho da descrição */
+        }
+    </style>
 </head>
 <body>
-    <!DOCTYPE html>
-<html>
-<head>
-  <title>Titulo da pagina</title>
-</head>
-<body>
-  <h1>Manchete</h1>
-  <p>Descricao</p>
-</body>
-</html>
-    <img src="nomedoarquivo.jpeg" alt="Trote: descricao da imagem" width="600" height="400">
-    <p>Texto da imagem<p>
+    <h1><span class="highlight">G</span>ames <span class="highlight">D</span>atabase</h1>
+    <div class="games-container">
+        <div class="game">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Dead_Space_2022_Teaser_Art.jpg" alt="Dead Space">
+            <h2 class="game-title">Dead Space</h2>
+            <p class="game-description">Dead Space é um jogo de terror e sobrevivência, ambientado em uma nave de mineração espacial onde você é o protagonista Isaac Clarke, em busca de sua namorada.</p>
+        </div>
+        <div class="game">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/0/04/Resident_Evil_capa.png" alt="Resident Evil">
+            <h2 class="game-title">Resident Evil</h2>
+            <p class="game-description">O pai do survival horror, ambientado em uma mansão acima das montanhas de Racoon City, onde um esquadrão policial tenta encontrar membros desaparecidos.</p>
+        </div>
+        <div class="game">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/0/05/Silent_Hill_capa.png" alt="Silent Hill">
+            <h2 class="game-title">Silent Hill</h2>
+            <p class="game-description">A história começa com Harry Mason viajando de carro até Silent Hill quando, de repente, sofre um acidente e sua filha desaparece, levando-o a descobrir os mistérios da cidade.</p>
+        </div>
+    </div>
 </body>
 </html>
